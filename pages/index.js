@@ -37,7 +37,6 @@ const Page = () => {
         >
           Hello, I'm a software developer based in Cambodia!
         </Box>
-
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
@@ -133,7 +132,6 @@ const Page = () => {
             .
           </BioSection>
         </Section>
-
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
             Passionate

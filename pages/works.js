@@ -8,7 +8,7 @@ import CEL from '../public/images/works/cel-bot.png'
 import LMS from '../public/images/works/LMS.png'
 
 const Works = () => (
-  <Layout>
+  <Layout title="Works">
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
         Projects
