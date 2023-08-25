@@ -1,0 +1,30 @@
+{
+  "name": "zen-portfolio",
+  "version": "1.0.0.",
+  "description": "Monyvann's personal portfolio",
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next build",
+    "prettier": "prettier",
+    "lint": "next lint"
+  },
+  "author": "zen",
+  "license": "virlia",
+  "dependencies": {
+    "@chakra-ui/icons": "^2.1.0",
+    "@chakra-ui/react": "^2.8.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "framer-motion": "^10.16.1",
+    "next": "^13.4.19",
+    "reacr": "^1.0.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.10.1",
+    "three": "^0.155.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.47.0",
+    "eslint-config-next": "^13.4.19",
+    "prettier": "^3.0.2"
+  }
+}
