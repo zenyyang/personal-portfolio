@@ -225,6 +225,11 @@ const Page = () => {
             </Button>
           </Box>
         </Section>
+        <Section delay={0.5}>
+          <Heading as="h3" variant="section-title" mt={100}>
+            Credits
+          </Heading>
+        </Section>
       </Container>
     </Layout>
   )

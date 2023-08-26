@@ -44,7 +44,7 @@ const VoxelDog = () => {
       refRenderer.current = renderer
       const scene = new THREE.Scene()
 
-      const target = new THREE.Vector3(-0.5, 1.2, 0)
+      const target = new THREE.Vector3(0, 1.2, 0)
       const initialCameraPosition = new THREE.Vector3(
         20 * Math.sin(0.2 * Math.PI),
         10,
@@ -65,7 +65,12 @@ const VoxelDog = () => {
       camera.position.copy(initialCameraPosition)
       camera.lookAt(target)
 
-      const ambientLight = new THREE.AmbientLight(0xffffff, 1)
+      const topLight = new THREE.DirectionalLight(0xffffff, 1)
+      topLight.position.set(500, 500, 500)
+      topLight.castShadow = true
+      scene.add(topLight)
+
+      const ambientLight = new THREE.AmbientLight(0xcccccc, 2)
       scene.add(ambientLight)
 
       const controls = new OrbitControls(camera, renderer.domElement)
