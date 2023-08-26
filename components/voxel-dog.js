@@ -53,7 +53,7 @@ const VoxelDog = () => {
 
       // 640 -> 240
       // 8   -> 6
-      const scale = scH * 0.005 + 4.8
+      const scale = scH * 0.0005 + 4
       const camera = new THREE.OrthographicCamera(
         -scale,
         scale,
@@ -65,7 +65,7 @@ const VoxelDog = () => {
       camera.position.copy(initialCameraPosition)
       camera.lookAt(target)
 
-      const ambientLight = new THREE.AmbientLight(0xcccccc, 5)
+      const ambientLight = new THREE.AmbientLight(0xffffff, 1)
       scene.add(ambientLight)
 
       const controls = new OrbitControls(camera, renderer.domElement)

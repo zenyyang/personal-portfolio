@@ -15,13 +15,14 @@ import Section from '../components/section'
 import Paragraph from '../components/paragrapgh'
 import NextLink from 'next/link'
 import Layout from '../components/layouts/article'
-import { ChevronRightIcon } from '@chakra-ui/icons'
+import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
 import { BioSection, BioYear } from '../components/bio'
 import {
   IoLogoTwitter,
   IoLogoInstagram,
   IoLogoGithub,
-  IoLogoDiscord
+  IoLogoDiscord,
+  IoLogoLinkedin
 } from 'react-icons/io5'
 
 const Page = () => {
@@ -42,10 +43,7 @@ const Page = () => {
             <Heading as="h2" variant="page-title">
               Monyvann (Zen様)
             </Heading>
-            <p>
-              Your Friendly Neighborhood Software Developer (Full Stack
-              Developer)
-            </p>
+            <p>Your Friendly Neighborhood Programmer (Full-Stack Developer)</p>
           </Box>
           <Box
             flexShrink={0}
@@ -188,6 +186,20 @@ const Page = () => {
             </ListItem>
             <ListItem>
               <Link
+                href="https://www.linkedin.com/in/monyvann-men-65b7a5260/"
+                target="_blank"
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoLinkedin} />}
+                >
+                  @monyvann-men
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link
                 href="https://www.instagram.com/_monyvann_/"
                 target="_blank"
               >
@@ -201,6 +213,17 @@ const Page = () => {
               </Link>
             </ListItem>
           </List>
+          <Box align="left" my={4} ml={5}>
+            <Button
+              as={NextLink}
+              href="mailto:monybun27@gmail.com"
+              scroll={false}
+              leftIcon={<EmailIcon />}
+              colorScheme="teal"
+            >
+              Email me
+            </Button>
+          </Box>
         </Section>
       </Container>
     </Layout>

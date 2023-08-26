@@ -1,9 +1,19 @@
-import { Container, Badge, List, ListItem, Heading } from '@chakra-ui/react'
+import {
+  Container,
+  Badge,
+  List,
+  ListItem,
+  Heading,
+  Icon
+} from '@chakra-ui/react'
 import { Title, Meta } from '../../components/work'
 import P from '../../components/paragrapgh'
 import Layout from '../../components/layouts/article'
 import Section from '../../components/section'
 import { BioSection, BioYear } from '../../components/bio'
+import { IoLogoPython } from 'react-icons/io5'
+import { BiLogoMongodb } from 'react-icons/bi'
+import { TbBrandOpenai } from 'react-icons/tb'
 
 const Work = () => (
   <Layout title="Virlia">
@@ -23,7 +33,11 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Technologies</Meta>
-          <span>Python, MongoDB, OpenAI</span>
+          <span>
+            <Icon as={IoLogoPython} />
+            Python, <Icon as={BiLogoMongodb} />
+            MongoDB, <Icon as={TbBrandOpenai} /> OpenAI
+          </span>
         </ListItem>
         <ListItem>
           <Meta>Status</Meta>

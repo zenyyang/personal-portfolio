@@ -4,7 +4,8 @@ import {
   List,
   ListItem,
   Heading,
-  Link
+  Link,
+  Icon
 } from '@chakra-ui/react'
 import { Title, Meta } from '../../components/work'
 import P from '../../components/paragrapgh'
@@ -13,10 +14,12 @@ import Section from '../../components/section'
 import { BioSection, BioYear } from '../../components/bio'
 import { SimpleGrid } from '@chakra-ui/react'
 import { WorkGridItem } from '../../components/grid-item'
+import { IoLogoPython, IoLogoDiscord } from 'react-icons/io5'
 
 import cel1 from '../../public/images/works/cel1.jpg'
 import cel2 from '../../public/images/works/cel2.jpg'
 import cel3 from '../../public/images/works/cel3.jpg'
+import { BiLogoDiscord, BiLogoPython } from 'react-icons/bi'
 
 const Work = () => (
   <Layout title="CEL - Discord BOT">
@@ -36,7 +39,10 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Technologies</Meta>
-          <span>Python, Discord API</span>
+          <span>
+            <Icon as={BiLogoPython} /> Python, <Icon as={BiLogoDiscord} />{' '}
+            Discord API
+          </span>
         </ListItem>
         <ListItem>
           <Meta>Status</Meta>

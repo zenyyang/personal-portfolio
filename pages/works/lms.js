@@ -4,13 +4,16 @@ import {
   List,
   ListItem,
   Heading,
-  Link
+  Link,
+  Icon
 } from '@chakra-ui/react'
 import { Title, Meta } from '../../components/work'
 import P from '../../components/paragrapgh'
 import Layout from '../../components/layouts/article'
 import Section from '../../components/section'
 import { BioSection, BioYear } from '../../components/bio'
+import { BiLogoJava, bilogoe } from 'react-icons/bi'
+import { RiFileExcel2Fill } from 'react-icons/ri'
 
 const Work = () => (
   <Layout title="Library Management System">
@@ -27,7 +30,10 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Technologies</Meta>
-          <span>Java, Excel, SwingUI</span>
+          <span>
+            <Icon as={BiLogoJava} /> Java, <Icon as={RiFileExcel2Fill} /> Excel,
+            SwingUI
+          </span>
         </ListItem>
         <ListItem>
           <Meta>Status</Meta>
