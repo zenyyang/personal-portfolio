@@ -6,6 +6,7 @@ import Layout from '../components/layouts/article'
 import Virlia from '../public/images/works/virlia.jpg'
 import CEL from '../public/images/works/cel-bot.png'
 import LMS from '../public/images/works/LMS.png'
+import Cafe from '../public/images/works/cafe.png'
 
 const Works = () => (
   <Layout title="Works">
@@ -16,6 +17,12 @@ const Works = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.1}>
+          <WorkGridItem id="cafe" title="Comfort喫茶 " thumbnail={Cafe}>
+            Comfort喫茶 is a virtual cafe, where you can chill, relax and listen
+            to lofi music.
+          </WorkGridItem>
+        </Section>
+        <Section delay={0.2}>
           <WorkGridItem id="virlia" title="Virlia" thumbnail={Virlia}>
             Virlia is a startup focused on utilizing AI technology to enhance
             customer service.
@@ -26,7 +33,7 @@ const Works = () => (
             A python Discord bot for CEL specializes in match VETO for VALORANT
           </WorkGridItem>
         </Section>
-        <Section delay={0.5}>
+        <Section delay={0.4}>
           <WorkGridItem
             id="lms"
             title="Library Management System"

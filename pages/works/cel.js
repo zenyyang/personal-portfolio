@@ -14,7 +14,6 @@ import Section from '../../components/section'
 import { BioSection, BioYear } from '../../components/bio'
 import { SimpleGrid } from '@chakra-ui/react'
 import { WorkGridItem } from '../../components/grid-item'
-import { IoLogoPython, IoLogoDiscord } from 'react-icons/io5'
 
 import cel1 from '../../public/images/works/cel1.jpg'
 import cel2 from '../../public/images/works/cel2.jpg'

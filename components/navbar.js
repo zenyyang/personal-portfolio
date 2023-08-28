@@ -13,7 +13,6 @@ import {
   MenuButton,
   IconButton,
   useColorModeValue,
-  Icon,
   forwardRef
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
@@ -77,9 +76,6 @@ const NavBar = props => {
         >
           <LinkItem href="/works" path={path}>
             Projects
-          </LinkItem>
-          <LinkItem href="/posts" path={path}>
-            Posts
           </LinkItem>
           <LinkItem
             target="_blank"

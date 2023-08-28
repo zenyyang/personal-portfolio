@@ -4,7 +4,6 @@ import {
   Heading,
   Image,
   Link,
-  SimpleGrid,
   Icon,
   useColorModeValue,
   Button,
@@ -72,7 +71,13 @@ const Page = () => {
             developing high-quality software solutions. I am a sophomore
             pursuing a Computer Science Major, and currently working on a SaaS
             called{' '}
-            <Link as={NextLink} href="/works/inkdrop" passHref scroll={false}>
+            <Link
+              as={NextLink}
+              href="/works/inkdrop"
+              target="_blank"
+              passHref
+              scroll={false}
+            >
               Virlia
             </Link>
             .
@@ -100,7 +105,7 @@ const Page = () => {
           <BioSection>
             <BioYear>2020</BioYear>
             Completed the Associate Program at
-            <Link href="https://cambodia.itstep.org/">
+            <Link href="https://cambodia.itstep.org/" target="_blank">
               {' '}
               IT Step Academy{' '}
             </Link>{' '}
@@ -114,7 +119,7 @@ const Page = () => {
             <BioYear>2022 - Present</BioYear>
             Attending Bachelor of Science in Information Technology Management
             at
-            <Link href="https://www.aupp.edu.kh/">
+            <Link href="https://www.aupp.edu.kh/" target="_blank">
               {' '}
               American University of Phnom Penh
             </Link>
@@ -123,7 +128,7 @@ const Page = () => {
           <BioSection>
             <BioYear>2022 - Present</BioYear>
             Attending Bachelor of Science in Computer Science at
-            <Link href="https://www.fhsu.edu/">
+            <Link href="https://www.fhsu.edu/" target="_blank">
               {' '}
               Fort Hays State University
             </Link>
@@ -136,7 +141,10 @@ const Page = () => {
           </Heading>
           <Paragraph>
             Music,{' '}
-            <Link href="https://www.tiktok.com/@zeennnn06?_t=8f7xD64ffpI&_r=1">
+            <Link
+              href="https://www.tiktok.com/@zeennnn06?_t=8f7xD64ffpI&_r=1"
+              target="_blank"
+            >
               {' '}
               Playing Instruments (Guitar and Piano)
             </Link>
@@ -220,6 +228,7 @@ const Page = () => {
               scroll={false}
               leftIcon={<EmailIcon />}
               colorScheme="teal"
+              target="_blank"
             >
               Email me
             </Button>
