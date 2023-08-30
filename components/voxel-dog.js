@@ -13,7 +13,7 @@ const VoxelDog = () => {
   const [loading, setLoading] = useState(true)
   const refRenderer = useRef()
   const urlDogGLB =
-    (process.env.NODE_ENV === 'production' ? '' : '') + '/dog.glb'
+    (process.env.NODE_ENV === 'production' ? '' : '') + '/computer.glb'
 
   const handleWindowResize = useCallback(() => {
     const { current: renderer } = refRenderer
@@ -44,7 +44,7 @@ const VoxelDog = () => {
       refRenderer.current = renderer
       const scene = new THREE.Scene()
 
-      const target = new THREE.Vector3(0, 1.2, 0)
+      const target = new THREE.Vector3(0, 0.7, 0)
       const initialCameraPosition = new THREE.Vector3(
         20 * Math.sin(0.2 * Math.PI),
         10,
@@ -53,7 +53,7 @@ const VoxelDog = () => {
 
       // 640 -> 240
       // 8   -> 6
-      const scale = scH * 0.0005 + 4
+      const scale = scH * 0.0005 + 2.5
       const camera = new THREE.OrthographicCamera(
         -scale,
         scale,
@@ -70,7 +70,7 @@ const VoxelDog = () => {
       topLight.castShadow = true
       scene.add(topLight)
 
-      const ambientLight = new THREE.AmbientLight(0xcccccc, 2)
+      const ambientLight = new THREE.AmbientLight(0xcccccc, 5)
       scene.add(ambientLight)
 
       const controls = new OrbitControls(camera, renderer.domElement)

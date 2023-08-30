@@ -1,17 +1,18 @@
 import {
+  useColorModeValue,
   Container,
   Box,
   Heading,
   Image,
   Link,
   Icon,
-  useColorModeValue,
   Button,
   List,
   ListItem
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import Paragraph from '../components/paragrapgh'
+import Tools from '../components/tools'
 import NextLink from 'next/link'
 import Layout from '../components/layouts/article'
 import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
@@ -88,7 +89,7 @@ const Page = () => {
               href="/works"
               scroll={false}
               rightIcon={<ChevronRightIcon />}
-              colorScheme="teal"
+              colorScheme={useColorModeValue('teal', 'pink')}
             >
               My projects
             </Button>
@@ -137,19 +138,9 @@ const Page = () => {
         </Section>
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
-            Passionate
+            Tools & Languages
           </Heading>
-          <Paragraph>
-            Music,{' '}
-            <Link
-              href="https://www.tiktok.com/@zeennnn06?_t=8f7xD64ffpI&_r=1"
-              target="_blank"
-            >
-              {' '}
-              Playing Instruments (Guitar and Piano)
-            </Link>
-            , Video Games, Codes, AI & Machine Learning
-          </Paragraph>
+          <Tools />
         </Section>
         <Section delay={0.4}>
           <Heading as="h3" variant="section-title">
@@ -233,11 +224,6 @@ const Page = () => {
               Email me
             </Button>
           </Box>
-        </Section>
-        <Section delay={0.5}>
-          <Heading as="h3" variant="section-title" mt={100}>
-            Credits
-          </Heading>
         </Section>
       </Container>
     </Layout>

@@ -11,7 +11,7 @@ import Cafe from '../public/images/works/cafe.png'
 const Works = () => (
   <Layout title="Works">
     <Container>
-      <Heading as="h3" fontSize={20} mb={4}>
+      <Heading as="h3" variant="section-title" fontSize={20} mt={10}>
         Projects
       </Heading>
 
