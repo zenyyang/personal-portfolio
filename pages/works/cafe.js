@@ -54,7 +54,7 @@ const Work = () => (
       </List>
 
       <Section delay={0.3}>
-        <Heading as="h3" variant="section-title">
+        <Heading as="h3" variant="section-title" mb={10}>
           Images
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>

@@ -108,6 +108,7 @@ const NavBar = props => {
                 </MenuItem>
                 <MenuItem
                   as={Link}
+                  target="_blank"
                   href="https://github.com/zenyyang?tab=repositories"
                 >
                   Github
