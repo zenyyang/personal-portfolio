@@ -20,6 +20,7 @@
     "reacr": "^1.0.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
+    "react-type-animation": "^3.1.0",
     "three": "^0.155.0"
   },
   "devDependencies": {
