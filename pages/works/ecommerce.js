@@ -12,7 +12,7 @@ import { Title, Meta } from '../../components/work'
 import P from '../../components/paragrapgh'
 import Layout from '../../components/layouts/article'
 import Section from '../../components/section'
-import { WorkGridItem } from '../../components/grid-item'
+import { WorkGridPicture } from '../../components/grid-item'
 import {
   TbBrandNextjs,
   TbBrandTailwind,
@@ -80,16 +80,25 @@ const Work = () => (
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={4}>
           <Section delay={0.1}>
-            <WorkGridItem id="ecmain" thumbnail={ECMain}></WorkGridItem>
+            <WorkGridPicture id="ecmain" thumbnail={ECMain}></WorkGridPicture>
           </Section>
           <Section delay={0.3}>
-            <WorkGridItem id="ecproduct" thumbnail={ECProducts}></WorkGridItem>
+            <WorkGridPicture
+              id="ecproduct"
+              thumbnail={ECProducts}
+            ></WorkGridPicture>
           </Section>
           <Section delay={0.4}>
-            <WorkGridItem id="ecdetail" thumbnail={ECDetail}></WorkGridItem>
+            <WorkGridPicture
+              id="ecdetail"
+              thumbnail={ECDetail}
+            ></WorkGridPicture>
           </Section>
           <Section delay={0.5}>
-            <WorkGridItem id="eccheckout" thumbnail={ECCheckout}></WorkGridItem>
+            <WorkGridPicture
+              id="eccheckout"
+              thumbnail={ECCheckout}
+            ></WorkGridPicture>
           </Section>
         </SimpleGrid>
       </Section>

@@ -45,6 +45,18 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => (
   </Box>
 )
 
+export const WorkGridPicture = ({ children, title, thumbnail }) => (
+  <Box w="100%" textAlign="center">
+    <Image
+      src={thumbnail}
+      alt={title}
+      className="grid-item-thumbnail"
+      placeholder="blur"
+    />
+    <Text fontSize={14}>{children}</Text>
+  </Box>
+)
+
 export const GridItemStyle = () => (
   <Global
     styles={`

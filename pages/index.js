@@ -94,13 +94,7 @@ const Page = () => {
             developing high-quality software solutions. I am a sophomore
             pursuing a Computer Science Major, and currently working on a SaaS
             called{' '}
-            <Link
-              as={NextLink}
-              href="/works/inkdrop"
-              target="_blank"
-              passHref
-              scroll={false}
-            >
+            <Link as={NextLink} href="/works/virlia" passHref scroll={false}>
               Virlia
             </Link>
             .

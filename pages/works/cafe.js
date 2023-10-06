@@ -12,7 +12,7 @@ import { Title, Meta } from '../../components/work'
 import P from '../../components/paragrapgh'
 import Layout from '../../components/layouts/article'
 import Section from '../../components/section'
-import { WorkGridItem } from '../../components/grid-item'
+import { WorkGridPicture } from '../../components/grid-item'
 import { SiChakraui } from 'react-icons/si'
 import { TbBrandNextjs, TbBrandThreejs } from 'react-icons/tb'
 
@@ -59,10 +59,10 @@ const Work = () => (
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section delay={0.1}>
-            <WorkGridItem id="cafe1" thumbnail={cafe1}></WorkGridItem>
+            <WorkGridPicture thumbnail={cafe1}></WorkGridPicture>
           </Section>
           <Section delay={0.3}>
-            <WorkGridItem id="cafe2" thumbnail={cafe2}></WorkGridItem>
+            <WorkGridPicture thumbnail={cafe2}></WorkGridPicture>
           </Section>
         </SimpleGrid>
       </Section>

@@ -13,7 +13,7 @@ import Layout from '../../components/layouts/article'
 import Section from '../../components/section'
 import { BioSection, BioYear } from '../../components/bio'
 import { SimpleGrid } from '@chakra-ui/react'
-import { WorkGridItem } from '../../components/grid-item'
+import { WorkGridPicture } from '../../components/grid-item'
 
 import cel1 from '../../public/images/works/cel1.jpg'
 import cel2 from '../../public/images/works/cel2.jpg'
@@ -73,13 +73,13 @@ const Work = () => (
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section delay={0.1}>
-            <WorkGridItem id="cel1" thumbnail={cel1}></WorkGridItem>
+            <WorkGridPicture id="cel1" thumbnail={cel1}></WorkGridPicture>
           </Section>
           <Section delay={0.3}>
-            <WorkGridItem id="cel2" thumbnail={cel2}></WorkGridItem>
+            <WorkGridPicture id="cel2" thumbnail={cel2}></WorkGridPicture>
           </Section>
           <Section delay={0.5}>
-            <WorkGridItem id="cel3" thumbnail={cel3}></WorkGridItem>
+            <WorkGridPicture id="cel3" thumbnail={cel3}></WorkGridPicture>
           </Section>
         </SimpleGrid>
       </Section>

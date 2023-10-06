@@ -12,7 +12,7 @@ import { Title, Meta } from '../../components/work'
 import P from '../../components/paragrapgh'
 import Layout from '../../components/layouts/article'
 import Section from '../../components/section'
-import { WorkGridItem } from '../../components/grid-item'
+import { WorkGridPicture } from '../../components/grid-item'
 import {
   TbBrandNextjs,
   TbBrandTailwind,
@@ -74,34 +74,37 @@ const Work = () => (
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={4}>
           <Section delay={0.1}>
-            <WorkGridItem id="dbmain" thumbnail={DBmain}></WorkGridItem>
+            <WorkGridPicture id="dbmain" thumbnail={DBmain}></WorkGridPicture>
           </Section>
           <Section delay={0.3}>
-            <WorkGridItem
+            <WorkGridPicture
               id="dbbillboard"
               thumbnail={DBbillboard}
-            ></WorkGridItem>
+            ></WorkGridPicture>
           </Section>
           <Section delay={0.4}>
-            <WorkGridItem id="dbstore" thumbnail={DBstore}></WorkGridItem>
+            <WorkGridPicture id="dbstore" thumbnail={DBstore}></WorkGridPicture>
           </Section>
           <Section delay={0.5}>
-            <WorkGridItem id="dblogin" thumbnail={DBlogin}></WorkGridItem>
+            <WorkGridPicture id="dblogin" thumbnail={DBlogin}></WorkGridPicture>
           </Section>
           <Section delay={0.6}>
-            <WorkGridItem id="dbcate" thumbnail={DBcate}></WorkGridItem>
+            <WorkGridPicture id="dbcate" thumbnail={DBcate}></WorkGridPicture>
           </Section>
           <Section delay={0.7}>
-            <WorkGridItem id="dbsize" thumbnail={DBsize}></WorkGridItem>
+            <WorkGridPicture id="dbsize" thumbnail={DBsize}></WorkGridPicture>
           </Section>
           <Section delay={0.8}>
-            <WorkGridItem id="dbcolor" thumbnail={DBcolor}></WorkGridItem>
+            <WorkGridPicture id="dbcolor" thumbnail={DBcolor}></WorkGridPicture>
           </Section>
           <Section delay={0.5}>
-            <WorkGridItem id="dbproduct" thumbnail={DBproducts}></WorkGridItem>
+            <WorkGridPicture
+              id="dbproduct"
+              thumbnail={DBproducts}
+            ></WorkGridPicture>
           </Section>
           <Section delay={0.5}>
-            <WorkGridItem id="dborder" thumbnail={DBorder}></WorkGridItem>
+            <WorkGridPicture id="dborder" thumbnail={DBorder}></WorkGridPicture>
           </Section>
         </SimpleGrid>
       </Section>
