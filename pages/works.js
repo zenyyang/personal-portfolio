@@ -10,6 +10,7 @@ import Cafe from '../public/images/works/cafe-square.png'
 import Ecommerce from '../public/images/works/ecommerce-main-square.png'
 import Dashboard from '../public/images/works/db-main-square.png'
 import Journally from '../public/images/works/journally-square.png'
+import Blog from '../public/images/works/blog-main.png'
 
 const Works = () => (
   <Layout title="Works">
@@ -19,6 +20,11 @@ const Works = () => (
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        <Section delay={0.2}>
+          <WorkGridItem id="blog" title="ZBlog" thumbnail={Blog}>
+            ZBlog is a blog website built to share my journey.
+          </WorkGridItem>
+        </Section>
         <Section delay={0.2}>
           <WorkGridItem id="journally" title="Journally" thumbnail={Journally}>
             Journally is an AI-powered journaling website.
